@@ -14,6 +14,9 @@ $(document).ready(function(){
             alert('This position is alredy occupied');
         }else{
             turns ++ 
+            if(winner !== ""){
+                clearBoard();
+            }
             if(turns % 2 === 0){
                 this.innerHTML = 'x';
                 $(this).addClass('x');
@@ -42,14 +45,15 @@ $(document).ready(function(){
                     let id0 = '#' + possiblities[i][0];
                     let id1 = '#' + possiblities[i][1];
                     let id2 = '#' + possiblities[i][2];
-                    if($(id0).text() === "x" && $(id1).text() === 'x' && $(id2).text() === 'x'){
+                    if($(id0).text() === "x" && $(id1).text() === 'x' && $(id2).text() === 'x' & winner === ""){
                         winner = "x";
                         $(id0).addClass('markIt');
                         $(id1).addClass('markIt');
                         $(id2).addClass('markIt');
                         player1WinningCount++;
                         $('span.score1').text(player1WinningCount);
-                        // clearBoard();
+                        $('.winner').text("player1 has won the game");
+                        //clearBoard();
                         break;
                     }
                     
@@ -58,14 +62,15 @@ $(document).ready(function(){
                     let id0 = '#' + possiblities[i][0];
                     let id1 = '#' + possiblities[i][1];
                     let id2 = '#' + possiblities[i][2];
-                    if($(id0).text() === "o" && $(id1).text() === 'o' && $(id2).text() === 'o'){
+                    if($(id0).text() === "o" && $(id1).text() === 'o' && $(id2).text() === 'o' && winner === ""){
                         winner = 'o';
                         $(id0).addClass('markIt');
                         $(id1).addClass('markIt');
                         $(id2).addClass('markIt');
                         player2WinningCount++;
                         $('span.score2').text(player2WinningCount); 
-                        // clearBoard();
+                        $('.winner').text("player1 has won the game");
+                        //clearBoard();
                         break;
                     }
 
@@ -76,13 +81,16 @@ $(document).ready(function(){
    function clearBoard(){
              
        
-        if($(confirm('clearBoard!'))){
+        if($(confirm('Do you wanna restart the game?'))){
             $('td.o').empty();
             $('td.x').empty();
             $('td').removeClass('o');
             $('td').removeClass('x');
             $('td').removeClass('markIt')
             turns = 0;
+            winner = "";
+            $('.winner').text("");
+
         }
        
        

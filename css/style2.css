@@ -34,13 +34,14 @@ table tr td:last-child {
     border-right: 0;
 }
 .reset{
-    width:150px;
+    width:200px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 5px;
-    background: #7d1911;
+    background:#BD2000;
     margin: 15px auto;
     color: white;
-    font-family: 'New Tegomin', serif;
+    font-family: Huck;
     text-align: center;
     padding: 5px;
 }
@@ -58,6 +59,8 @@ table tr td:last-child {
     box-shadow: 0 5px 15px rgba(0,0,0);
     transition: box-shadow 0.6s ease-in-out;
     
+    border-radius: 5px;
+    
 }
 #txt {
     background: url("https://unsplash.com/photos/wQLAGv4_OYs/download?force=true&w=1920") center center no-repeat;
@@ -65,7 +68,7 @@ table tr td:last-child {
     text-align: center;
     justify-content: center;
     font-family: Huck;
-    font-size: 10vw;
+    font-size: 8vw;
     color: black;
     padding-top: 7%;
     z-index: 1;
@@ -95,4 +98,9 @@ p{
 span{
     font-family: 'New Tegomin', serif;
     color:#1597bb;
+}
+.winner{
+    font-family: Huck;
+    font-size: 30px;
+    color: #BD2000;
 }
