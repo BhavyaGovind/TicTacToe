@@ -82,6 +82,7 @@ $(document).ready(function(){
             $('td').removeClass('o');
             $('td').removeClass('x');
             $('td').removeClass('markIt')
+            turns = 0;
         }
        
        

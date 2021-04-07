@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 body{
     background-color: #e7ca45;
 }
@@ -57,4 +58,41 @@ table tr td:last-child {
     box-shadow: 0 5px 15px rgba(0,0,0);
     transition: box-shadow 0.6s ease-in-out;
     
+}
+#txt {
+    background: url("https://unsplash.com/photos/wQLAGv4_OYs/download?force=true&w=1920") center center no-repeat;
+    background-size: 150%;
+    text-align: center;
+    justify-content: center;
+    font-family: Huck;
+    font-size: 10vw;
+    color: black;
+    padding-top: 7%;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 8s linear infinite;
+}
+@keyframes move {
+    0% { background-position: 0 0; }
+    50% { background-position: -200px -200px; }
+    100% { background-position: 0 0; }
+}
+  
+@font-face {
+    font-family: "Huck";
+    font-weight: normal;
+    font-stretch: condensed;
+    src: local("?"),        
+}
+p{
+    font-family: Huck;
+    font-size: 30px;
+    color: #BD2000;
+}
+span{
+    font-family: 'New Tegomin', serif;
+    color:#1597bb;
 }
