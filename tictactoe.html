@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,32 +10,79 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/tictactoe.js"></script>
 </head>
+
 <body>
     <div id="container">
         <div id="txt">
             Tic Tac Toe
         </div>
-        <p>Player1 Score : <span class="score1">0</span></p>
-        <p>Player2 Score : <span class="score2">0</span></p>
-        <table id="table">
-            <tr>
-                <td id='1'></td>
-                <td id='2'></td>
-                <td id='3'></td>
-            </tr>
-            <tr>
-                <td id='4'></td>
-                <td id='5'></td>
-                <td id='6'></td>
-            </tr>
-            <tr>
-                <td id='7'></td>
-                <td id='8'></td>
-                <td id='9'></td>
-            </tr>
-        </table>
         <div class="winner"></div>
-        <button class="reset">Play Again</button>
-    </div><!--Container ends here-->
+        <div id="container1">
+            <div class="player1Images">
+                <div class='imagePicker'>
+                    <p>Minion: <span>Pick one from below</span></p>
+                    <img class='fillChoice1'>
+                </div>
+                <img class='images' src="images/minion_1.gif" alt="image">
+                <img class='images' src="images/minion_2.gif" alt="image">
+                <img class='images' src="images/minion_3.gif" alt="image">
+                <img class='images' src="images/minion_4.gif" alt="image">
+                <img class='images' src="images/minion_5.gif" alt="image">
+                <img class='images' src="images/minion_6.gif" alt="image">
+                <img class='images' src="images/minion_7.gif" alt="image">
+                <img class='images' src="images/minion_8.gif" alt="image">
+            </div>
+        </div>
+        <!--Container1 ends here-->
+        <div id="container2">
+
+            <table id="table">
+                <tr>
+                    <td id='1'></td>
+                    <td id='2'></td>
+                    <td id='3'></td>
+                </tr>
+                <tr>
+                    <td id='4'></td>
+                    <td id='5'></td>
+                    <td id='6'></td>
+                </tr>
+                <tr>
+                    <td id='7'></td>
+                    <td id='8'></td>
+                    <td id='9'></td>
+                </tr>
+            </table>
+
+        </div>
+        <!--Container2 ends here-->
+        <div id="container3">
+            <div class="player2Images">
+                <div class='imagePicker'>
+                    <p>Mario: <span>Pick one from below</span></p>
+                    <img class='fillChoice2'>
+                </div>
+                <img class='images' src="images/mario_1.gif" alt="image">
+                <img class='images' src="images/mario_2.gif" alt="image">
+                <img class='images' src="images/mario_3.gif" alt="image">
+                <img class='images' src="images/mario_4.gif" alt="image">
+                <img class='images' src="images/mario_5.gif" alt="image">
+                <img class='images' src="images/mario_6.gif" alt="image">
+                <img class='images' src="images/mario_7.gif" alt="image">
+                <img class='images' src="images/mario_8.gif" alt="image">
+                
+            </div>
+        </div>
+        <!--Container3 ends here-->
+        <footer>
+            <p>Player 1: <span class="score1">0</span></p>
+            <p>Player 2: <span class="score2">0</span></p>
+            <img class="reset" src="images/replay.png" alt="replay" />
+            <img class="clearScores" src="images/clear.png" alt="clear"/>
+        </footer>
+
+    </div>
+    <!--Container ends here-->
 </body>
+
 </html>
