@@ -146,6 +146,10 @@ $(document).ready(function () {
     function clearBoard() {
 
         $('td').empty();
+        // $('.visibleImage1').toggleClass('.fillChoice2');
+        // $('.visibleImage').toggleClass('.fillChoice1');
+        // player1= "";
+        // player2= "";
         $('div.imagePicker > p > span').text("Pic image from below");
         //for removing all classes (x,o,markIt)
         $('td').removeClass();
